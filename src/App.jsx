@@ -6,6 +6,7 @@ import TopBar from "./components/TopBar";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import About from "./components/About";
+// import Team from "./components/Team";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Slider />
       <About />
+      {/* <Team /> */}
   </div>
   )
 }
