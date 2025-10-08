@@ -1,0 +1,82 @@
+/* ===== TOPBAR STYLES ===== */
+.top-bar {
+  background-color: #004b2a;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.top-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: white;
+  color: #000;
+}
+
+.top-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.top-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.top-link:hover {
+  color: #dc143c;
+}
+
+/* ===== RESPONSIVE TOPBAR ===== */
+@media (max-width: 768px) {
+  .top-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .top-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .top-link {
+    font-size: 13px;
+  }
+}
