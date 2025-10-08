@@ -1,0 +1,148 @@
+.footer {
+  background: #000;
+  color: #ddd;
+  padding: 3rem 1rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.footer-heading {
+  color: #004b2a;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #004b2a;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #004b2a;
+  margin-left: 4px;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-link {
+  color: #bbb;
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: #004b2a;
+  transform: translateY(-3px);
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+
+.newsletter-input:focus {
+  border-color:#004b2a;
+}
+
+.newsletter-btn {
+  background: #004b2a;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+  background: #004b2a;
+}
+
+.btn-scroll-top {
+  background: none;
+  border: none;
+  color: #004b2a;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-scroll-top:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.footer-bottom a {
+  color: #004b2a;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #28a745;
+}
+
+.hover-text-success {
+  transition: 0.3s;
+}
+
+.hover-text-success:hover {
+  color: #28a745 !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}

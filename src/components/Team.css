@@ -1,0 +1,286 @@
+/* 🌈 GLOBAL STYLES */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    
+  ), #333; */
+  background: white;
+  overflow-x: hidden;
+}
+
+.team-wrapper {
+  width: 100%;
+  padding: 2rem 5%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 🔹 TITLE SECTION */
+.team-title h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color:black;
+  font-weight: 700;
+}
+
+.team-title p {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+
+/* 🔹 INFO BOX */
+.team-info {
+  display: flex;
+  justify-content: center;
+  border:1px solid black;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-info-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.team-info-details {
+  text-align: left;
+  max-width: 600px;
+}
+
+.team-info-details h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.team-info-details h3 {
+  color: #777;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+}
+
+.team-info-details p {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* 🔹 TEAM GRID */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* 🔹 CARD STYLE */
+.team-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .profile-image {
+  transform: scale(1.05);
+}
+
+/* 🔹 OVERLAY ON HOVER */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(25, 118, 210, 0.65), rgba(128, 208, 199, 0.65));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+}
+
+/* 🔹 PAGINATION DOTS */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 8px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #1976d2;
+  transform: scale(1.3);
+}
+
+/* 🔹 RESPONSIVE STYLES */
+
+/* --- Tablets --- */
+@media (max-width: 1024px) {
+  .team-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-info-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .team-info-details {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .team-title h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* --- Large Mobile --- */
+@media (max-width: 768px) {
+  .team-wrapper {
+    padding: 1.5rem 4%;
+  }
+
+  .team-title h1 {
+    font-size: 2rem;
+  }
+
+  .team-title p {
+    font-size: 1rem;
+  }
+
+  .team-info {
+    padding: 1.5rem;
+  }
+
+  .team-info-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team-info-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-info-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-info-details p {
+    font-size: 0.95rem;
+  }
+}
+
+/* --- Small Mobile --- */
+@media (max-width: 480px) {
+  .team-wrapper {
+    padding: 1rem;
+  }
+
+  .team-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .team-info {
+    padding: 1rem;
+  }
+
+  .team-info-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-info-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .team-info-details p {
+    font-size: 0.9rem;
+  }
+
+  .team-card {
+    max-width: 100%;
+  }
+
+  .overlay-text {
+    font-size: 0.9rem;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}

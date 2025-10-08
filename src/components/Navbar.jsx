@@ -34,7 +34,7 @@ function Navbar() {
             <div className="dropdown-content">
               <a href="./Pages/About.html">THE COMPANY</a>
               <a href="#">OUR TEAM</a>
-              <a href="#">WHY SKILL QUEST</a>
+              <a href="#">WHY 4SightLearning</a>
             </div>
           </div>
 

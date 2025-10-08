@@ -1,0 +1,179 @@
+/* 🌿 General Section */
+.whychoose-section {
+  background: #f9fafb;
+  padding: 80px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🌿 Section Header */
+.section-header {
+  max-width: 750px;
+  margin: 0 auto 60px;
+}
+
+.section-header h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e5631;
+  position: relative;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+
+.section-header h4::before {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #1e5631;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-header h4 span {
+  color: #333;
+}
+
+.section-header p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-top: 10px;
+}
+
+/* 🌿 Grid Layout – 3x3 fixed on desktop */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* 🌿 Feature Cards */
+.feature-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+  height: 100%; /* makes all cards equal height */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌿 Icons */
+.feature-icon {
+  font-size: 45px;
+  color: #1e5631;
+  background: rgba(30, 86, 49, 0.1);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  line-height: 90px;
+  margin: 0 auto 1.3rem;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌿 Hover Animation */
+.feature-card:hover {
+  background: linear-gradient(145deg, #1e5631, #4cae74);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(30, 86, 49, 0.25);
+}
+
+.feature-card:hover .feature-icon {
+  background: #fff;
+  color: #1e5631;
+  transform: scale(1.1);
+}
+
+.feature-card:hover h6,
+.feature-card:hover p {
+  color: #fff;
+}
+
+/* 🌿 Texts */
+.feature-card h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+.feature-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+/* 🌿 Responsive Fixes */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .section-header h4 {
+    font-size: 2rem;
+  }
+  .section-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whychoose-section {
+    padding: 60px 15px;
+  }
+
+  .features-grid {
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+
+  .feature-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .feature-icon {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h4 {
+    font-size: 1.6rem;
+  }
+
+  .feature-card h6 {
+    font-size: 1.05rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}
