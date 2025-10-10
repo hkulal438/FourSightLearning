@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./Footer.css";
+import "../Footer/Footer.css";
 
 const Footer = () => {
   useEffect(() => {

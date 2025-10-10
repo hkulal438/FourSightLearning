@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import "./Navbar.css";
+import "../Navbar/Navbar.css";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);

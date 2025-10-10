@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhyChoose.css";
+import "../WhyChooseUs/WhyChoose.css";
 import { FaGlobe, FaAnchor, FaHourglassHalf, FaDatabase, FaUpload, FaCamera } from "react-icons/fa";
 
 const features = [

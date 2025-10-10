@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube, FaFacebook } from "react-icons/fa";
-import "./TopBar.css";
+import "../TopBar/TopBar.css";
 
 function TopBar() {
   return (

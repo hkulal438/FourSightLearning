@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./Team.css";
+import "../Team/Team.css";
 
 const teamMembers = [
   {
